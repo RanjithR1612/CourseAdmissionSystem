@@ -1,5 +1,7 @@
 package com.company.courseadmissionsystem.repository;
 
+import java.util.Optional;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,5 +12,5 @@ public interface CourseAdmissionSystemRepository extends MongoRepository<Student
 
 	Student findByAadharNumber(Long aadharNumber);
 	Student findByPhoneNumber(Long phoneNumber);
-	Student findById(String id);
+	Optional<Student> findById(String id);
 }
