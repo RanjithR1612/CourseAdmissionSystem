@@ -10,4 +10,5 @@ public interface CourseAdmissionSystemRepository extends MongoRepository<Student
 
 	Student findByAadharNumber(Long aadharNumber);
 	Student findByPhoneNumber(Long phoneNumber);
+	Student findById(String id);
 }
